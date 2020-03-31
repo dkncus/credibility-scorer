@@ -17,3 +17,11 @@ pip freeze > requirements.txt
 ### Data Setup
 
 There should be an empty `data` folder. The kaggle dataset here (https://www.kaggle.com/clmentbisaillon/fake-and-real-news-dataset/data#) was downloaded and the accompanying CSV files are put in there. As such, all pathways are coded to expect this but DO NOT upload the data onto the repo. I've included a gitignore but just a quick reminder.
+
+### Running the model
+
+The following command allows you to run the full pipeline. That script runs through preprocessing (if necessary files are missing) before running the training process
+
+```
+./run_pipeline.sh
+```
