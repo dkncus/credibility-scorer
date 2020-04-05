@@ -24,8 +24,8 @@ with open("./data/Fake.csv") as csvfile:
         title = word_tokenize(row[0])
         body = []
         for w in word_tokenize(row[1]):
-            if w not in stop_words:                            #filter stop words
-                wLower = w.lower()                             #convert body to lower case
+            if w not in stop_words:                             #filter stop words
+                wLower = w.lower()                              #convert body to lower case
                 wLowerLemmatized = lemmatizer.lemmatize(wLower) #lemmatize each word in body
                 body.append(wLowerLemmatized)
         real = False
@@ -34,7 +34,7 @@ with open("./data/Fake.csv") as csvfile:
         
         ListOfNews.append(news)
         
-with open("./data/True.csv") as csvfile:
+with open("./data/True.csv") as csvfile:        #repeat for True.csv
         
     reader = csv.reader(csvfile)
     next(reader) # skip header line
