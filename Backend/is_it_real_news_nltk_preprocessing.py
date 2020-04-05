@@ -15,7 +15,7 @@ lemmatizer = WordNetLemmatizer()
 
 ListOfNews = []
 
-with open("Fake.csv") as csvfile:
+with open(./data/"Fake.csv") as csvfile:
         
     reader = csv.reader(csvfile)
     next(reader) # skip header line
@@ -34,7 +34,7 @@ with open("Fake.csv") as csvfile:
         
         ListOfNews.append(news)
         
-with open("True.csv") as csvfile:
+with open(./data/"True.csv") as csvfile:
         
     reader = csv.reader(csvfile)
     next(reader) # skip header line
