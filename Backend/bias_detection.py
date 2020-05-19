@@ -1,3 +1,5 @@
+# from https://towardsdatascience.com/media-bias-detection-using-deep-learning-libraries-in-python-44efef4918d1
+
 from random import random
 
 import numpy as np
